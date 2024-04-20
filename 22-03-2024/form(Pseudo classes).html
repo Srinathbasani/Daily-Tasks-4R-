@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schlorship Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>
+      Pre-Matric Scholarship Application Form (2023-24) for SC,ST,BC,PWD
+      Students
+    </h1>
+    <form>
+      <!-- <div style="background-color: rgb(171, 223, 242);"> -->
+      <fieldset class="f1">
+        <legend><h2>Student Particulars</h2></legend>
+        <section>
+          <label for="student name">Student Name:</label>
+          <input type="text" id="student name" name="student name" required />
+          <label for="fathers name">Fathers Name:</label>
+          <input type="text" id="fathers name" name="fathers name" required />
+          <label for="mothers name ">Mothers Name:</label>
+          <input
+            type="text"
+            id="mothers name"
+            name="mothers name"
+            required
+          /><br /><br />
+          <label for="gender">Gender:</label>
+          <input
+            type="radio"
+            id="gender"
+            checked="checked"
+            name="gender"
+            required
+          />Male
+          <input
+            type="radio"
+            id="gender"
+            checked="checked"
+            name="gender"
+            required
+          />Female
+          <input
+            type="radio"
+            id="gender"
+            checked="checked"
+            name="gender"
+            required
+          />Others
+          <label for="DOB">Student Date of Birth:</label>
+          <input type="date" id="DOB" name="DOB" required /><br /><br />
+          <label>Ration Card No.:</label>
+          <input type="text" id="DOB" name="DOB" />
+          <label for="uid">Student UID(Aadhar) No.:</label>
+          <input
+            type="text"
+            id="uid"
+            name="uid"
+            pattern="[0-9]{12}"
+          /><br /><br />
+          <label for="profession">Profession of Parents:</label>
+          <input type="text" id="profession" name="profession" />
+          <label for="disabled or not">Whether Disabled or Not:</label>
+          <input type="radio" id="disabled or not" name="disabled or not" />Yes
+          <input
+            type="radio"
+            id="disabled or not"
+            name="disabled or not"
+          />No<br /><br />
+
+          <label for="email">Enter your email:</label>
+          <input type="email" id="email" name="email" class="email" />
+          <label>Community/Religion:</label>
+          <select>
+            <option value="">Select Religion</option>
+            <option value="hindu">Hindu</option>
+            <option value="muslim">Muslim</option>
+            <option value="christian">Christian</option>
+          </select>
+          <label>Caste Category:</label>
+          <select>
+            <option value="">Select Category</option>
+            <option value="BC-A">BC-A</option>
+            <option value="BC-B">BC-B</option>
+            <option value="BC-C">BC-C</option>
+            <option value="BC-D">BC-D</option>
+            <option value="SC">SC</option>
+            <option value="ST">ST</option>
+            <option value="Minority">MINORITY</option>
+          </select>
+        </section>
+      </fieldset>
+      <!-- </div> -->
+
+      <!-- <div style="background-color: rgb(171, 223, 242);"> -->
+
+      <fieldset class="f2">
+        <legend><h2>School Particulars</h2></legend>
+        <label for="district">School District:</label>
+        <input type="text" id="district" name="district" required />
+
+        <label for="mandal">School Mandal:</label>
+        <input type="text" id="mandal" name="mandal" required /><br /><br />
+
+        <label for="school">School:</label>
+        <input type="text" id="school" name="school" required />
+
+        <label for="psc">Present Studying Class:</label>
+        <input
+          type="text"
+          id="psc"
+          name="Present Studying Class"
+          required
+        /><br /><br />
+
+        <label for="">Medium:</label>
+        <select>
+          <option value="">Select Medium</option>
+          <option value="telugu">Telugu</option>
+          <option value="hindi">Hindi</option>
+          <option value="english">English</option>
+          <option value="urdu">Urdu</option>
+        </select>
+        <label for="admission no.">Admission No.</label>
+        <input
+          type="text"
+          id="admission"
+          name="admission"
+          required
+        /><br /><br />
+
+        <label for="admission date">Admission Date:</label>
+        <input type="date" id="admission date" name="admission date" required />
+
+        <label for="">Hostel/Day Scholar:</label>
+        <select>
+          <option value="">Select</option>
+          <option value="hostel">Hostel</option>
+          <option value="day scholar">Day Scholar</option></select
+        ><br /><br />
+        <label for="previous class">Previous Class:</label>
+        <input
+          type="text"
+          id="fprevious class"
+          name="previous class"
+          required
+        />
+
+        <label for="grade">Grade/Percentage of Previous Class:</label>
+        <input type="text" id="grade" name="fathers name" required />
+      </fieldset>
+      <!-- </div>   -->
+
+      <!-- <div style="background-color: rgb(171, 223, 242);"> -->
+      <fieldset class="f3">
+        <legend><h2>Student Bank Account Details</h2></legend>
+        <label for="bank district">Bank District:</label>
+        <input type="text" id="bank district" name="bank district" />
+        <label for="bank name">Bank Name:</label>
+        <input
+          type="text"
+          id="bank name"
+          name="bank name"
+          required
+        /><br /><br />
+
+        <label for="branch name & ifsc code">Branch Name& IFSC Code:</label>
+        <input
+          type="text"
+          id="branch name & ifsc code"
+          name="branch name & ifsc code"
+          required
+        />
+
+        <label for="acc-holder">Name of the account Holder:</label>
+        <input
+          type="text"
+          id="acc-holder"
+          name="acc-holder"
+          required
+        /><br /><br />
+
+        <label for="acc no-">Student Bank Account No.:</label>
+        <input type="number" id="acc no-" name="acc no-" required />
+
+        <label for="re-enter">Re-Enter Student Bank Account No.:</label>
+        <input type="text" id="re-enter" name="re-enter" required />
+      </fieldset>
+      <!-- </div> -->
+
+      <!-- <div style="background-color: rgb(171, 223, 242);"> -->
+      <fieldset class="f4">
+        <legend><h2>Address:</h2></legend>
+        <label for="district">District:</label>
+        <input type="text" id="district" name="district" required />
+
+        <label for="mandal">Mandal:</label>
+        <input type="text" id="mandal" name="mandal" required /><br /><br />
+
+        <label for="village">Village:</label>
+        <input type="text" id="village" name="village" required />
+
+        <label for="care of">Care Of:</label>
+        <input type="text" id="care of" name="care of" required /><br /><br />
+
+        <label for="building">Building:</label>
+        <input type="text" id="building" name="building" required />
+
+        <label for="street">Street:</label>
+        <input type="text" id="street" name="street" required /><br /><br />
+
+        <label for="land mark">Land Mark:</label>
+        <input type="text" id="land mark" name="land mark" required />
+
+        <label for="locality">Locality:</label>
+        <input type="text" id="locality" name="locality" required /><br /><br />
+
+        <label for="pincode">PIN Code:</label>
+        <input type="text" id="pincode" name="pincode" required />
+        <label for="country">Country:</label>
+        <input type="text" disabled="disabled" value="India" />
+
+        <label for="mobile">Mobile No:</label>
+        <input type="tel" id="mobile" name="mobile" required /><br /><br />
+
+        <label for="re-enter">Re-Enter Mobile No.:</label>
+        <input type="tel" id="re-enter" name="re-enter" required />
+
+        <label for="belongs">Mobile No. Belongs to:</label>
+        <input type="text" id="belongs" name="belongs" required />
+      </fieldset>
+      <!-- </div> -->
+      <!-- <div style="background-color: rgb(171, 223, 242);"> -->
+      <fieldset class="f5">
+        <legend><h2>Scanned Documents</h2></legend>
+
+        <label for="photo">Image of your Passport Photograph:</label>
+        <input type="file" id="photo" name="photo" required /><br /><br />
+        <label for="passbook">Scanned Bank Passbook(First Page):</label>
+        <input type="file" id="passbook" name="passbook" required /><br /><br />
+        <label for="uid">Scanned UID(Aadhar):</label>
+        <input type="file" id="uid" name="uid" required />
+      </fieldset>
+      <!-- </div> -->
+      <input type="submit" value="Submit" />
+      <input type="reset" value="reset" />
+    </form>
+  </body>
+</html>

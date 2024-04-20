@@ -1,0 +1,61 @@
+div {
+  border: 2px solid black;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  .text {
+    background-color: blue;
+  }
+  p {
+    font-size: 20px;
+    color: aqua;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .text {
+    background-color: aqua;
+  }
+  p {
+    font-size: 26px;
+    color: brown;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .text {
+    background-color: blueviolet;
+  }
+  p {
+    font-size: 23px;
+    color: chartreuse;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .text {
+    background-color: burlywood;
+  }
+  p {
+    font-size: 20px;
+    color: darkmagenta;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .text {
+    background-color: crimson;
+  }
+  p {
+    font-size: 17px;
+    color: darkturquoise;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 2101px) {
+  .text {
+    background-color: darkgreen;
+  }
+  p {
+    font-size: 15px;
+    color: whitesmoke;
+  }
+}

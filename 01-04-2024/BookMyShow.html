@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="container-fluid">
+    <navbar>
+    <nav class="navbar bg-body-tertiary mb-2">
+      <div class="container-fluid">
+     
+      <img src="data:image/png;base64,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" height="60px">
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2 input"
+          type="search"
+          placeholder="Search for Movies,Events,Plays,Sports and Actvities"
+          aria-label="Search"
+        />
+        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+      </form>
+      
+      <select class="form-select width" aria-label="Default select example">
+        <option >Open this select menu</option>
+        <option selected value="1">Hyderabad</option>
+        <option value="2">Banglore</option>
+        <option value="3">Chennai</option>
+        <option value="4">Ahmedabad</option>
+        <option value="5">Visakapatnam</option>
+        <option value="6">Warangal</option>
+      </select>
+
+      <button type="button" class="btn btn-danger">Sign in</button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Hey!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Notifications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Your Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Stream Library</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Play Credit Card
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help & Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Accounts & Setting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Rewards</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </div>
+    </nav>
+  </navbar>
+    <div id="carouselExampleInterval" class="carousel slide mb-4" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1900">
+          <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1706382336630_web.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="1900">
+          <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1712126635508_giggleweb.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="1900">
+          <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1712902077697_u1longdriveliveinconcertweb.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="1900">
+          <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1713163931489_joj.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-around">
+      <div class="col mb-4 tillu">
+        <div class="card border-0">
+          <img
+            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4xLzEwICA5MC43SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00343267-ucfqbyhxcu-portrait.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Tillu Square</h5>
+            <p class="card-text">
+           Action/Comedy/Romantic
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4 tillu">
+        <div class="card border-0">
+          <img
+            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny4yLzEwICAzOS4xSyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00373701-lumczvutmm-portrait.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">The Family Star</h5>
+            <p class="card-text">Action/Comedy/Romantic</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4 tillu">
+        <div class="card border-0">
+          <img
+            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny45LzEwICAzLjdLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00389375-xcjdxwfdmd-portrait.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Geethanjali Malli Vachindhi</h5>
+            <p class="card-text">
+             Comedy/Horror
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4 tillu">
+        <div class="card border-0">
+          <img
+            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS8xMCAgMTUuOEsgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00393618-ujbcesljtq-portrait.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Manjummel Boys(Telugu)</h5>
+           
+            <p class="card-text">
+              Adventure/Drama/Thriller
+        
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-around">
+      <div class="col tillu">
+        <div class="card border-0">
+          <img
+            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ni4xLzEwICA1Mi4xSyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00322647-cbcrakrkwb-portrait.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Bade Miyan Chote Miyan</h5>
+            <p class="card-text">
+              Action/Comedy/Thriller
+            
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col tillu">
+        <div class="card border-0">
+          <img
+            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4zLzEwICAzNC40SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00386326-geatkxcgfb-portrait.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Aavesham</h5>
+            <p class="card-text">Action/Comedy</p>
+          </div>
+        </div>
+      </div>
+      <div class="col tillu">
+        <div class="card border-0">
+          <img
+            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC42LzEwICA1MC43SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00109952-cktkpbsmmf-portrait.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Maidaan</h5>
+            <p class="card-text">
+              Biography/Drama/Sports
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col tillu">
+        <div class="card border-0">
+          <img
+            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC43LzEwICA5My45SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00358147-jvckjqrpzu-portrait.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Godzilla X Kong:The New Empire</h5>
+            <p class="card-text">
+              Action/Sci-Fi/Thriller
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

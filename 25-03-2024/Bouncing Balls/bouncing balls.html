@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bounce</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(238, 243, 235);
+      }
+      .container ul {
+        display: flex;
+        /* border-bottom: 8px solid black; */
+        /* background: linear-gradient(
+          violet,
+          indigo,
+          skyblue,
+          green,
+          yellow,
+          orange,
+          red
+        ); */
+        height: 30px;
+        padding-bottom: 15px;
+      }
+      .container ul li {
+        width: 30px;
+        height: 30px;
+        background-color: rgb(231, 32, 92);
+        list-style: none;
+        margin: 0 10px;
+        border-radius: 50%;
+        animation: bouncy 1s linear infinite;
+      }
+      @keyframes bouncy {
+        0% {
+          transform: translatey(0);
+        }
+        50% {
+          transform: translatey(-150px);
+        }
+        100% {
+          transform: translatey(0);
+        }
+      }
+      ul li:nth-child(1) {
+        animation-delay: 0.9s;
+        background-color: violet;
+      }
+      ul li:nth-child(2) {
+        animation-delay: 0.8s;
+        background-color: indigo;
+      }
+      ul li:nth-child(3) {
+        animation-delay: 0.7s;
+        background-color: skyblue;
+      }
+      ul li:nth-child(4) {
+        animation-delay: 0.6s;
+        background-color: green;
+      }
+      ul li:nth-child(5) {
+        animation-delay: 0.5s;
+        background-color: yellow;
+      }
+      ul li:nth-child(6) {
+        animation-delay: 0.4s;
+        background-color: orange;
+      }
+      ul li:nth-child(7) {
+        animation-delay: 0.3s;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </body>
+</html>

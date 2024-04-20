@@ -1,0 +1,13 @@
+.div-1 {
+  height: 580px;
+  width: 100%;
+  background-color: #66a5ad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div-2 {
+  height: 480px;
+  width: 50%;
+  background-color: #c4dfe6;
+}

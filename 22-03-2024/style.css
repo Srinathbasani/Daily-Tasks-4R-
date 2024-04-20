@@ -1,0 +1,35 @@
+.f1 input:active {
+  background-color: red;
+}
+input:checked {
+  height: 20px;
+  width: 20px;
+  accent-color: orange;
+}
+h2::first-letter {
+  font-size: 50px;
+}
+.f2 label:hover {
+  font-size: 20px;
+}
+.f2 input:focus {
+  background-color: bisque;
+}
+.email:valid {
+  background-color: yellow;
+}
+.email:invalid {
+  border: 2px solid red;
+}
+label:first-child {
+  background-color: aqua;
+}
+label:last-child {
+  font-size: 30px;
+}
+.f3:not(input) {
+  color: crimson;
+}
+.f4 label:last-child {
+  color: blue;
+}

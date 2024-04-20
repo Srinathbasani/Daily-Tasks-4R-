@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        background-color: rgb(74, 106, 235);
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+        height: 100px;
+        padding: 5px;
+        margin-left: 20px;
+      }
+
+      .nav-links {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-around;
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      @media screen and (min-width: 1025px) {
+        .hamburger-menu {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        .hamburger-menu {
+          /* display: inline-block; */
+          position: absolute;
+          top: 35px;
+          right: 35px;
+          height: 35px;
+          width: 35px;
+        }
+        .nav-links {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        width="50px"
+        height="30px"
+        src="./2023_Facebook_icon.svg"
+        alt="Logo"
+        class="logo"
+      />
+      <nav class="nav-links">
+        <a>Home</a>
+        <a>About</a>
+        <a>Services</a>
+        <a>Contact</a>
+      </nav>
+      <img src="./burger-bar.png" alt="Hamburger Menu" class="hamburger-menu" />
+    </div>
+  </body>
+</html>
